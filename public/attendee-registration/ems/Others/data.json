@@ -1,0 +1,78 @@
+{
+	"user": {
+		"first_name": "Amit",
+		"last_name": "Patil",
+		"email": "test@example.com",
+		"contact": "9877878878",
+		"region_code": "91",
+		"language": "en",
+		"tenant_id": "bb3da702-2e30-4b03-a810-354b1ace18a3",
+		"affiliate_code": "ZAI97USBVQ",
+		"updated_at": "2024-06-11T09:39:21.000000Z",
+		"created_at": "2024-06-11T09:39:21.000000Z",
+		"id": 699,
+		"full_name": "Amit Patil",
+		"profile_image": "https://bharatcard.me/web/media/avatars/150-2.jpg",
+		"plan_name": "Basic",
+		"multi_language_date": "11th June 2024 03:09 PM",
+		"roles": [
+			{
+				"id": 2,
+				"name": "admin",
+				"display_name": "Admin",
+				"is_default": 1,
+				"guard_name": "web",
+				"created_at": "2023-09-05T07:52:20.000000Z",
+				"updated_at": "2023-09-05T07:52:20.000000Z",
+				"pivot": {
+					"model_id": 699,
+					"role_id": 2,
+					"model_type": "App\\Models\\User"
+				}
+			}
+		],
+		"media": [],
+		"subscriptions": [
+			{
+				"id": 711,
+				"tenant_id": "bb3da702-2e30-4b03-a810-354b1ace18a3",
+				"plan_id": 1,
+				"transaction_id": null,
+				"plan_amount": 499,
+				"discount": null,
+				"payable_amount": null,
+				"plan_frequency": 1,
+				"starts_at": "2024-06-11T09:39:21.000000Z",
+				"ends_at": "2025-06-10T09:39:21.000000Z",
+				"trial_ends_at": "2025-06-10T09:39:21.000000Z",
+				"no_of_vcards": 1,
+				"notes": null,
+				"status": 1,
+				"coupon_code_meta": null,
+				"payment_type": null,
+				"created_at": "2024-06-11T09:39:21.000000Z",
+				"updated_at": "2024-06-11T09:39:21.000000Z",
+				"attachment": "",
+				"plan": {
+					"id": 1,
+					"name": "Basic",
+					"no_of_vcards": 1,
+					"currency_id": 4,
+					"price": 499,
+					"status": 1,
+					"frequency": 2,
+					"is_default": 1,
+					"trial_days": 364,
+					"created_at": "2023-09-05T07:52:19.000000Z",
+					"updated_at": "2024-03-20T08:18:54.000000Z"
+				},
+				"media": []
+			}
+		]
+	},
+	"uemail": "test@example.com",
+	"upass": "Vna0Ztyp",
+	"vcardlink": "https://bharatcard.me/amit631466",
+	"status": "failed",
+	"msg": "Expected response code \"250/251/252\" but got code \"550\", with message \"550-The mail server could not deliver mail to test@example.com. The account or\r\n550-domain may not exist, they may be blacklisted, or missing the proper dns\r\n550 entries.\"."
+}
