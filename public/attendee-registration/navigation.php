@@ -89,12 +89,12 @@
 				</a>
 				<ul id="attendee-submenu-5f5de" class="nav flex-column ml-3 collapse ">
 					<li class="nav-item">
-						<a href="add.php" class="nav-link ">
+						<a href="add.php?user_id=<?=isset($_GET['user_id']) ? $_GET['user_id'] : 0  ?>" class="nav-link ">
 							Add
 						</a>
 					</li>
 					<li class="nav-item">
-						<a href="list.php?code=askhuihwkhddskkadihibe" class="nav-link ">
+						<a href="list.php?user_id=<?=isset($_GET['user_id']) ? $_GET['user_id'] : 0  ?>&code=askhuihwkhddskkadihibe" class="nav-link ">
 							List
 						</a>
 					</li>

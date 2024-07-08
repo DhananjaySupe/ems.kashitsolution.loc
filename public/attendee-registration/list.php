@@ -1,14 +1,11 @@
-<?php
-	$organizer_id = 0;
+<?php include('menu-top.php') ?>
+	<?php
 	if(!empty($_GET['code']) && $_GET['code'] == 'askhuihwkhddskkadihibe') {
-		include('config.php'); 
-		
+		include('config.php'); 	
 		$sql = "SELECT * FROM eventic_user where by_organizer_id = '".$organizer_id."'";
-		$result = $conn->query($sql);
-		
-	?>
-	<?php if($result){ ?>
-		<?php include('menu-top.php') ?>
+		$result = $conn->query($sql); 
+		?>
+		<?php if($result){ ?>
 			<section class="section-pagetop bg-gray">
 				<div class="container clearfix">
 					<h4 class="title-page dark b float-xl-left mb-0">Add Attendee</h4>
@@ -72,6 +69,7 @@
 					</div>
 				</div>
 			</section>
-		<?php include('menu-bottom.php') ?>		
-	<?php } ?>
-<?php } ?>	
+		<?php } ?>
+	<?php } ?>	
+<?php include('menu-bottom.php') ?>		
+	
