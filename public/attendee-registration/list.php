@@ -48,10 +48,10 @@
 																	<small><?= $row["contact_no"] ?></small>
 																</td>
 																<td>
-																	<small><?= $row["vcard_link"] ?></small>
+																	<small><a href="<?= $row["vcard_link"] ?>" target="_blank"><?= $row["vcard_link"] ?></a></small>
 																</td>
 																<td>
-																	<small><?= $row["qrcode"] ?></small>
+																	<small><a href="<?= BASE_URL.'attendee-registration/qrcode/'.$row["qrcode"] ?>" target="_blank"><?= $row["qrcode"] ?></a></small>
 																</td>
 															</tr>
 															
