@@ -8,7 +8,7 @@
 		use Endroid\QrCode\ErrorCorrectionLevel\ErrorCorrectionLevelHigh;
 		use Endroid\QrCode\RoundBlockSizeMode\RoundBlockSizeModeMargin;
 		
-		$successmessage = $errormessage = $organizer_id = $vcard_link = $qrcode_filename = $salt = '';
+		$successmessage = $errormessage = $vcard_link = $qrcode_filename = $salt = '';
 		$enabled = '1';
 		$roles = 'a:1:{i:0;s:13:"ROLE_ATTENDEE";}';
 		$validate = true;
@@ -36,7 +36,7 @@
 				$validate = false; $errormessage = 'username should not be blank.';
 			} else if($validate && !$passwordInput){
 				$validate = false; $errormessage = 'password should not be blank.';
-			} else if($validate && count($contactInput) != 10){
+			} else if($validate && strlen($contactInput) != 10){
 				$validate = false; $errormessage = 'contact should not be blank and must be 10 digit.';
 			}
 			if($validate){
@@ -210,35 +210,35 @@
 								<div id="point_of_sale">
 									<div class="form-group">
 										<label for="firstnameInput" class="required">First Name</label>
-										<input type="text" id="firstnameInput" name="firstnameInput" required="required" class="form-control" />
+										<input type="text" id="firstnameInput" name="firstnameInput" required="required" class="form-control" value=""/>
 									</div>
 									<div class="form-group">
 										<label for="lastnameInput" class="required">Last Name</label>
-										<input type="text" id="lastnameInput" name="lastnameInput" required="required" class="form-control" />
+										<input type="text" id="lastnameInput" name="lastnameInput" required="required" class="form-control" value=""/>
 									</div>
 									<div class="form-group">
 										<label for="emailInput" class="required">Email</label>
-										<input type="email" id="emailInput" name="emailInput" required="required" class="form-control" />
+										<input type="email" id="emailInput" name="emailInput" required="required" class="form-control" value=""/>
 									</div>
 									<div class="form-group">
 										<label for="companyInput" class="required">Company</label>
-										<input type="text" id="companyInput" name="companyInput" required="required" class="form-control" />
+										<input type="text" id="companyInput" name="companyInput" required="required" class="form-control" value=""/>
 									</div>
 									<div class="form-group">
 										<label for="designationInput" class="required">Designation</label>
-										<input type="text" id="designationInput" name="designationInput" required="required" class="form-control" />
+										<input type="text" id="designationInput" name="designationInput" required="required" class="form-control" value=""/>
 									</div>
 									<div class="form-group">
 										<label for="contactInput" class="required">Contact</label>
-										<input type="number" id="contactInput" name="contactInput" required="required" class="form-control" />
+										<input type="number" id="contactInput" name="contactInput" required="required" class="form-control" value=""/>
 									</div>
 									<div class="form-group">
 										<label for="usernameInput" class="required">Username</label>
-										<input type="text" id="usernameInput" name="usernameInput" required="required" class="form-control" />
+										<input type="text" id="usernameInput" name="usernameInput" required="required" class="form-control" value=""/>
 									</div>
 									<div class="form-group">
 										<label for="passwordInput" class="required">Password</label>
-										<input type="password" id="passwordInput" name="passwordInput" required="required" class="form-control" />
+										<input type="password" id="passwordInput" name="passwordInput" required="required" class="form-control" value=""/>
 									</div>
 									<div class="form-group">
 										<button type="submit" id="point_of_sale_save" name="point_of_sale[save]" class="btn btn-primary btn">Save</button>
